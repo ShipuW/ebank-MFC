@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1061D96-956B-4AFB-A5A4-16F3437DFD4D}</ProjectGuid>
+    <RootNamespace>bankmanagement</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="AccountApply.h" />
+    <ClInclude Include="AccountDeposit.h" />
+    <ClInclude Include="AccountDetail.h" />
+    <ClInclude Include="AccountDraw.h" />
+    <ClInclude Include="AccountInfo.h" />
+    <ClInclude Include="AccountProperty.h" />
+    <ClInclude Include="AccountTransfer.h" />
+    <ClInclude Include="bankmanagement.h" />
+    <ClInclude Include="bankmanagementDlg.h" />
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="ChangeCardPassword.h" />
+    <ClInclude Include="ChangePassword.h" />
+    <ClInclude Include="CSeries0.h" />
+    <ClInclude Include="CTChart0.h" />
+    <ClInclude Include="ForgetPassword.h" />
+    <ClInclude Include="Hello.h" />
+    <ClInclude Include="Login.h" />
+    <ClInclude Include="ManageAccount.h" />
+    <ClInclude Include="ManageLogin.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="ManagerAccount.h" />
+    <ClInclude Include="ManagerAccountCard.h" />
+    <ClInclude Include="ManagerChartNew.h" />
+    <ClInclude Include="ManagerDeal.h" />
+    <ClInclude Include="ManagerProperty.h" />
+    <ClInclude Include="ManagerPropertyFeeDetail.h" />
+    <ClInclude Include="mySock.h" />
+    <ClInclude Include="Regist.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tchart1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="AccountApply.cpp" />
+    <ClCompile Include="AccountDeposit.cpp" />
+    <ClCompile Include="AccountDetail.cpp" />
+    <ClCompile Include="AccountDraw.cpp" />
+    <ClCompile Include="AccountInfo.cpp" />
+    <ClCompile Include="AccountProperty.cpp" />
+    <ClCompile Include="AccountTransfer.cpp" />
+    <ClCompile Include="bankmanagement.cpp" />
+    <ClCompile Include="bankmanagementDlg.cpp" />
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="ChangeCardPassword.cpp" />
+    <ClCompile Include="ChangePassword.cpp" />
+    <ClCompile Include="ForgetPassword.cpp" />
+    <ClCompile Include="Hello.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="ManageAccount.cpp" />
+    <ClCompile Include="ManageLogin.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="ManagerAccount.cpp" />
+    <ClCompile Include="ManagerAccountCard.cpp" />
+    <ClCompile Include="ManagerChartNew.cpp" />
+    <ClCompile Include="ManagerDeal.cpp" />
+    <ClCompile Include="ManagerProperty.cpp" />
+    <ClCompile Include="ManagerPropertyFeeDetail.cpp" />
+    <ClCompile Include="mySock.cpp" />
+    <ClCompile Include="Regist.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tchart1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="bankmanagement.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="POINTER.cur" />
+    <None Include="res\bankmanagement.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\background.bmp" />
+    <Image Include="res\background.jpeg" />
+    <Image Include="res\bankmanagement.ico" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="bankmanagement.rc" _x007B_CC0427C7-2124-4770-8847-F9EF4C50CDC2_x007D_="CTchart1" _x007B_FCB4B50A-E3F1-4174-BD18-54C3B3287258_x007D_="CTchart1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
